@@ -12,17 +12,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
+<style>
+@media (min-width:0px) and (max-width:769px){
+    #body{
+        width: 98vw;
+    }
+    .container__imagem__cabecalho__rodape{
+        float: none;
+        width: 98%;
+    }
+    .container__texto__cabecalho__rodape{
+        float: none;
+        width: 60%;
+        margin-top: 2rem;
+    }
+}
+@media (min-width:0px) and (max-width:519px){
+    .container__imagem__info__item__lista__noticias{
+        display: none;
+        width: 0%;
+        height: 0%;
+    }
+    .secao__info__item__lista__noticias{
+        width: 90%;
+    }
+}
+@media (min-width: 520px){
+    .container__imagem__info__item__lista__noticias{
+        float: right;
+        display: block;
+        width: 0%;
+        height: 0%;
+    }
+    .secao__info__item__lista__noticias{
+        width: 50%;
+    }
+
+}
+@media (min-width:770px){
+    #body{
+        width: 60vw;
+    }
+    .container__imagem__cabecalho__rodape{
+        float: left;
+        width: 45%;
+    }
+    .container__texto__cabecalho__rodape{
+        float: right;
+        width: 36%;
+        
+    }
+            
+}
+</style>
+
 <body style="
 box-sizing: border-box; 
 font-family: 'Fira Sans', sans-serif; 
 margin: 0; 
 overflow-x: hidden;
-width: 50vw;
-">
+"
+class="body" id="body">
 
     <header class="cabecalho" style="
             background-color: #040A0F;  
-            width: 100%; 
+            width: 100%;
+            height: auto;
             padding-top: 1.875rem; 
             padding-bottom: 3.875rem; 
             ">
@@ -243,12 +298,11 @@ border-bottom: 1px solid #ECEDEE;
                 ">
 
                     <section class="secao__info__item__lista__noticias" style="
-                    float: left;
                     padding-top: 1rem;
                     clear: both;
-                    width: 50%;
                     margin-left: 3.2%;
                     margin-bottom: 1rem;
+                    float: left;
                     ">
 
                         <div class="container__info__fonte" style="
@@ -321,7 +375,6 @@ border-bottom: 1px solid #ECEDEE;
                     </section>
 
                     <div class="container__imagem__info__item__lista__noticias" style="
-                    float: right;
                     margin-right: 3.2%;
                     ">
 
@@ -350,12 +403,11 @@ border-bottom: 1px solid #ECEDEE;
                 ">
 
                     <section class="secao__info__item__lista__noticias" style="
-                    float: left;
                     padding-top: 1rem;
                     clear: both;
-                    width: 50%;
                     margin-left: 3.2%;
                     margin-bottom: 1rem;
+                    float: left;
                     ">
 
                         <div class="container__info__fonte" style="
@@ -429,7 +481,6 @@ border-bottom: 1px solid #ECEDEE;
                     </section>
 
                     <div class="container__imagem__info__item__lista__noticias" style="
-                    float: right;
                     margin-right: 3.2%;
                     ">
 
@@ -857,20 +908,14 @@ border-bottom: 1px solid #ECEDEE;
         "
         >
 
-            <div class="container__imagem__cabecalho__rodape" style="
-            float: left;
-            width: 45%;
-            ">
+            <div class="container__imagem__cabecalho__rodape">
 
                 <img src="https://diogo-ol.github.io/EmailMarketingMontC/Assets/Logo/logo-marketing-insider-footer.jpg"
                     alt="Marketing Insider" class="imagem__cabecalho__rodape">
 
             </div>
 
-            <div class="container__texto__cabecalho__rodape" style="
-            float: right;
-            width: 36%;
-            ">
+            <div class="container__texto__cabecalho__rodape">
 
                 <h6 class="texto__cabecalho__rodape"
                 style="
